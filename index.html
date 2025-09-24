@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page - PLP Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Interactive Web Page</h1>
+
+    <!-- Part 1: Event Handling Demo -->
+    <section id="part1">
+      <h2>🎉 Part 1: Click Me!</h2>
+      <button id="clickBtn">Click for a Message</button>
+      <p id="message"></p>
+    </section>
+
+    <!-- Part 2: Interactive Features -->
+    <section id="part2">
+      <h2>🎮 Part 2: Interactive Elements</h2>
+
+      <!-- Light/Dark Mode Toggle -->
+      <div>
+        <button id="themeToggle">🌙 Toggle Dark Mode</button>
+      </div>
+
+      <!-- Counter Game -->
+      <div style="margin-top: 20px;">
+        <p>Click the button to count:</p>
+        <button id="counterBtn">Click Me!</button>
+        <span id="counter">0</span>
+      </div>
+
+      <!-- Collapsible FAQ -->
+      <div style="margin-top: 20px;">
+        <h3>❓ FAQ (Click to Toggle)</h3>
+        <p class="faq-question" id="faqQ">How does this work?</p>
+        <p class="faq-answer" id="faqA" style="display: none;">JavaScript listens for your clicks and updates the page instantly!</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section id="part3">
+      <h2>📋✅ Part 3: Form Validation</h2>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" />
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password (min 6 chars, 1 number):</label>
+          <input type="password" id="password" name="password" />
+          <span class="error" id="passwordError"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+        <p id="formStatus"></p>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
